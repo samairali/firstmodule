@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page layout="2columns-left" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="2columns-left">
+	<head>
+		<title>Hello world </title>
+	</head>
+<body>
+  <referenceContainer name="content">
+   <block class="ubold\ubold_helloworld\Block\HelloWorld" name="formbuilder" template="Learn_HelloWorld::content.phtml"/>
+  </referenceContainer>
+</body>
+</page>
