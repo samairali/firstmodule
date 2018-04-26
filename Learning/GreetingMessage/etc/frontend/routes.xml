@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+   <!--define id for frontend route is “standard”-->
+   <router id="standard">
+       <!--Route name-->
+       <route id="greet" frontName="greet">
+           <!--Module name-->
+           <module name="Learning_GreetingMessage" />
+       </route>
+   </router>
+</config>
