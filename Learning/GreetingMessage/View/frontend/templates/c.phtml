@@ -1,8 +1,19 @@
 <?php
+// calling getHelloCollection function from block/hello.php
 $collection = $this->getHelloCollection();
+// calling sayHello function from block/hello.php
+$check=$this->sayHello();
+echo $check;
 //print_r($collection);
 ?>
 <form action="<?php echo $this->getUrl("hello/add/index")?>" method="post">
+  <div class="form-group">
+    <label for="name">Add your name:</label>
+    <input type="name" class="input" name="name" id="name">
+    <button type="submit" class="btn btn-default">Submit</button>
+  </div>
+</form>
+<form action="<?php echo $this->getUrl("greet/add/index")?>" method="post">
   <div class="form-group">
     <label for="name">Add your name:</label>
     <input type="name" class="input" name="name" id="name">
@@ -14,7 +25,7 @@ $collection = $this->getHelloCollection();
       <tr>
         <th>Id</th>
         <th>Name</th>
-        <th>Created At</th>
+        <th>Season</th>
       </tr>
     </thead>
     <tbody>
