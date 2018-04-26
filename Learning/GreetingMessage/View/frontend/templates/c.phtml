@@ -1,5 +1,6 @@
 <?php
 $collection = $this->getHelloCollection();
+//print_r($collection);
 ?>
 <form action="<?php echo $this->getUrl("hello/add/index")?>" method="post">
   <div class="form-group">
@@ -19,9 +20,9 @@ $collection = $this->getHelloCollection();
     <tbody>
       <?php foreach ($collection as $item): ?>  
       <tr>
-        <td><?php echo $item->getId();?></td>
-        <td><?php echo $item->getName();?></td>
-        <td><?php echo $item->getCreatedAt();?></td>
+        <td><?php echo $item->getGreeting_id();?></td>
+        <td><?php echo $item->getMessage();?></td>
+        <td><?php echo $item->getSeason();?></td>
       </tr>
     <?php endforeach; ?>  
     </tbody>
